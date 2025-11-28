@@ -1,0 +1,92 @@
+# WordPress Core - Ignore core files (reinstallable)
+/wp-admin/
+/wp-includes/
+#/wp-*.php
+/index.php
+/license.txt
+/readme.html
+/xmlrpc.php
+
+# Keep wp-config.php tracked but ignore local/sample configs
+wp-config-sample.php
+wp-config-local.php
+
+# wp-content - Track custom themes and plugins only
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/backup*/
+/wp-content/cache/
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+/wp-content/blogs.dir/
+/wp-content/mu-plugins/
+
+# Plugins - Uncomment if you want to ignore all plugins
+# /wp-content/plugins/
+
+# Themes - Uncomment if you want to ignore all themes
+# /wp-content/themes/
+
+# Default WordPress themes (bundled/reinstallable)
+/wp-content/themes/twentytwentyfive/
+/wp-content/themes/twentytwentyfour/
+/wp-content/themes/twentytwentythree/
+
+# Debug and logs
+*.log
+debug.log
+/wp-content/debug.log
+error_log
+
+# DDEV
+/.ddev/
+wp-config-ddev.php
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+*.code-workspace
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Build artifacts
+*.map
+*.min.js
+*.min.css
+
+# Backups
+*.bak
+*.backup
+*.sql
+*.sql.gz
+*.tar.gz
+*.zip
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Composer
+composer.lock
+
+# npm/yarn
+package-lock.json
+yarn.lock
