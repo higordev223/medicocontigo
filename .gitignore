@@ -11,26 +11,11 @@
 wp-config-sample.php
 wp-config-local.php
 
-# wp-content - Track custom themes and plugins only
-/wp-content/uploads/
-/wp-content/upgrade/
-/wp-content/backup*/
-/wp-content/cache/
-/wp-content/advanced-cache.php
-/wp-content/wp-cache-config.php
-/wp-content/blogs.dir/
-/wp-content/mu-plugins/
-
-# Plugins - Uncomment if you want to ignore all plugins
-# /wp-content/plugins/
-
-# Themes - Uncomment if you want to ignore all themes
-# /wp-content/themes/
-
-# Default WordPress themes (bundled/reinstallable)
-/wp-content/themes/twentytwentyfive/
-/wp-content/themes/twentytwentyfour/
-/wp-content/themes/twentytwentythree/
+# wp-content - Ignore everything except salute-child theme
+/wp-content/*
+!/wp-content/themes/
+/wp-content/themes/*
+!/wp-content/themes/salute-child/
 
 # Debug and logs
 *.log
@@ -90,3 +75,6 @@ composer.lock
 # npm/yarn
 package-lock.json
 yarn.lock
+
+# Claude settings file
+wp-content/themes/salute-child/.claude/*
