@@ -11,11 +11,14 @@
 wp-config-sample.php
 wp-config-local.php
 
-# wp-content - Ignore everything except salute-child theme
+# wp-content - Ignore everything except salute-child theme and some custom plugins
 /wp-content/*
 !/wp-content/themes/
 /wp-content/themes/*
 !/wp-content/themes/salute-child/
+!/wp-content/plugins/
+/wp-content/plugins/*
+!/wp-content/plugins/mctelemed/
 
 # Debug and logs
 *.log
